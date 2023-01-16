@@ -8,7 +8,7 @@ public class Exemple implements IExemple {
     }
 
     public void setPrice(int price) {
-        Price = price;
+        this.Price = price;
     }
 
     public void augmenter(int i)  {

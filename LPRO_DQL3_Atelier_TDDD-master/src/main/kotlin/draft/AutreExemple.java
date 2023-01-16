@@ -1,7 +1,7 @@
 package main.kotlin.draft;
 
 public class AutreExemple implements IExemple {
-	private int Price = 0;
+	private int Price;
 
     public void setPrice(int price) {
     	this.Price = price;
