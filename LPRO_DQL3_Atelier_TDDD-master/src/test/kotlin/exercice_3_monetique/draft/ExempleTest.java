@@ -28,5 +28,23 @@ public class ExempleTest {
         sut1.setPrice(4);
         assertNotEquals(sut.getPrice() ,sut1.getPrice());
     }
+	
+	@Test
+	public void testPrixAugmenterEgal() {
+		// Prix Augmenter Egal
+		Exemple sut = new Exemple();
+		sut.setPrice(5);
+		sut.augmenter(2);
+		assertEquals(7, sut.getPrice());
+	}
+	
+	@Test
+	public void testPrixAugmenterNonEgal() {
+		// Prix Augmenter Non Egal
+		Exemple sut = new Exemple();
+		sut.setPrice(5);
+		sut.augmenter(2);
+		assertNotEquals(6, sut.getPrice());
+	}
 
 }
